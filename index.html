@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Rech - Le tue recensioni tecnologiche</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style to hide inactive sections */
+        .hidden-section {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Tech Rech</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline" data-section="home">Home</a></li>
+                    <li><a href="#recensioni" class="hover:underline" data-section="recensioni">Recensioni</a></li>
+                    <li><a href="#chisiamo" class="hover:underline" data-section="chisiamo">Chi Siamo</a></li>
+                    <li><a href="#contatti" class="hover:underline" data-section="contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+
+        <section id="home-section" class="main-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Ultime Recensioni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://www.juice.it/media/catalog/product/cache/7b46027f9500ccaf74b03362113ee58a/i/p/iphone16profotosito2025.jpg" alt="iPhone 16 Pro" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/FFFFFF?text=Immagine+iPhone+16+Pro';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone 16 Pro: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato l'11 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">L'iPhone 16 Pro eleva l'esperienza Apple con prestazioni estreme e un comparto fotografico ancora più versatile...</p>
+                        <a href="#iphone16pro-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphone16pro-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://hd2.tudocdn.net/1176560?w=824&h=494" alt="iPhone SE 4" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/EEEEEE/333333?text=Immagine+iPhone+SE+4';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone SE 4: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato l'11 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il ritorno del campione di convenienza? L'iPhone SE 4 porta la potenza Apple in un formato più accessibile...</p>
+                        <a href="#iphonese4-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphonese4-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://m.media-amazon.com/images/I/712Pyq1hPfL.jpg" alt="iPhone 16" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/333333?text=Immagine+iPhone+16';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone 16: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 10 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Apple continua la sua evoluzione con l'iPhone 16, introducendo miglioramenti mirati che affinano un'esperienza già eccellente...</p>
+                        <a href="#iphone16-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphone16-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_149593210?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402" alt="Samsung Galaxy S25 Ultra" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/FFFFFF?text=Immagine+S25+Ultra';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Samsung Galaxy S25 Ultra: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 09 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il non plus ultra della tecnologia mobile secondo Samsung. L'S25 Ultra non delude le aspettative...</p>
+                        <a href="#s25ultra-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s25ultra-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://images.samsung.com/it/smartphones/galaxy-s25/buy/04_Color-Selection/04-3_P2_Basic-Color/Color-Selection_Navy_PC.png" alt="Samsung Galaxy S25" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0000FF/FFFFFF?text=Immagine+S25';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Samsung Galaxy S25: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 08 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il nuovo flagship di Samsung alza l'asticella con innovazioni significative nel comparto fotografico e prestazioni al top...</p>
+                        <a href="#s25-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s25-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://www.samsungmobilepress.com/file/2D06B82A99F36C999DDFB9240A07B6806B7DDBD6BA6842F81A879CD5F2875054607BB5D7765FCA734A60272524DD882143C76420A26EE2A9CE6BB033E0E3113C2A10692515BCE0439A05A1A7882608D51C37189C2F4D2D7704F23EFE1BF992D02E16942A07E8769E494626118A76627451F1CE7C2D3589C2530652D6BDBCC906" alt="Samsung Galaxy S24 FE" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/FF0000/FFFFFF?text=Errore+caricamento+immagine';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">S24 FE Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 07 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il Samsung Galaxy S24 FE si presenta come un'opzione interessante per chi cerca le funzionalità di punta della serie S a un prezzo più accessibile...</p>
+                        <a href="#s24fe-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s24fe-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recensioni-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Tutte le Recensioni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                    <img src="https://www.juice.it/media/catalog/product/cache/7b46027f9500ccaf74b03362113ee58a/i/p/iphone16profotosito2025.jpg" alt="iPhone 16 Pro" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/FFFFFF?text=Immagine+iPhone+16+Pro';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone 16 Pro: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato l'11 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">L'iPhone 16 Pro eleva l'esperienza Apple con prestazioni estreme e un comparto fotografico ancora più versatile...</p>
+                         <a href="#iphone16pro-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphone16pro-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                     <img src="https://hd2.tudocdn.net/1176560?w=824&h=494" alt="iPhone SE 4" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/EEEEEE/333333?text=Immagine+iPhone+SE+4';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone SE 4: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato l'11 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il ritorno del campione di convenienza? L'iPhone SE 4 porta la potenza Apple in un formato più accessibile...</p>
+                        <a href="#iphonese4-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphonese4-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                    <img src="https://m.media-amazon.com/images/I/712Pyq1hPfL.jpg" alt="iPhone 16" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/333333?text=Immagine+iPhone+16';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">iPhone 16: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 10 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Apple continua la sua evoluzione con l'iPhone 16, introducendo miglioramenti mirati che affinano un'esperienza già eccellente...</p>
+                         <a href="#iphone16-full-review" class="text-blue-600 hover:underline font-semibold" data-section="iphone16-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                    <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_149593210?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402" alt="Samsung Galaxy S25 Ultra" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/FFFFFF?text=Immagine+S25+Ultra';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Samsung Galaxy S25 Ultra: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 09 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il non plus ultra della tecnologia mobile secondo Samsung. L'S25 Ultra non delude le aspettative...</p>
+                         <a href="#s25ultra-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s25ultra-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                    <img src="https://images.samsung.com/it/smartphones/galaxy-s25/buy/04_Color-Selection/04-3_P2_Basic-Color/Color-Selection_Navy_PC.png" alt="Samsung Galaxy S25" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0000FF/FFFFFF?text=Immagine+S25';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Samsung Galaxy S25: Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 08 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il nuovo flagship di Samsung alza l'asticella con innovazioni significative nel comparto fotografico e prestazioni al top...</p>
+                         <a href="#s25-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s25-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden col-span-1 mx-auto">
+                    <img src="https://www.samsungmobilepress.com/file/2D06B82A99F36C999DDFB9240A07B6806B7DDBD6BA6842F81A879CD5F2875054607BB5D7765FCA734A60272524DD882143C76420A26EE2A9CE6BB033E0E3113C2A10692515BCE0439A05A1A7882608D51C37189C2F4D2D7704F23EFE1BF992D02E16942A07E8769E494626118A76627451F1CE7C2D3589C2530652D6BDBCC906" alt="Samsung Galaxy S24 FE" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/FF0000/FFFFFF?text=Errore+caricamento+immagine';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">S24 FE Recensione Completa</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pubblicato il 07 Maggio 2025</p>
+                        <p class="text-gray-700 mb-4">Il Samsung Galaxy S24 FE si presenta come un'opzione interessante per chi cerca le funzionalità di punta della serie S a un prezzo più accessibile...</p>
+                        <a href="#s24fe-full-review" class="text-blue-600 hover:underline font-semibold" data-section="s24fe-full-review">Leggi la recensione completa &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="s24fe-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Samsung Galaxy S24 FE: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://www.samsungmobilepress.com/file/2D06B82A99F36C999DDFB9240A07B6806B7DDBD6BA6842F81A879CD5F2875054607BB5D7765FCA734A60272524DD882143C76420A26EE2A9CE6BB033E0E3113C2A10692515BCE0439A05A1A7882608D51C37189C2F4D2D7704F23EFE1BF992D02E16942A07E8769E494626118A76627451F1CE7C2D3589C2530652D6BDBCC906" alt="Samsung Galaxy S24 FE" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/FF0000/FFFFFF?text=Errore+caricamento+immagine';">
+
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S24 FE si posiziona come un "Fan Edition" che mira a portare l'esperienza premium della serie Galaxy S a un pubblico più ampio. Dopo averlo testato a fondo, possiamo dire che Samsung è riuscita in gran parte nell'intento, offrendo un dispositivo con pochi compromessi significativi.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    Esteticamente, l'S24 FE riprende le linee pulite e moderne dei suoi fratelli maggiori, con cornici ottimizzate e materiali di buona qualità. Il display Dynamic AMOLED 2X è un vero punto di forza: colori vividi, neri profondi e un'ottima luminosità che lo rende perfettamente leggibile anche sotto la luce diretta del sole. La frequenza di aggiornamento adattiva garantisce fluidità nell'utilizzo quotidiano e nei giochi.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Sotto la scocca, troviamo un **processore octa-core di fascia alta** che assicura un'esperienza utente fluida e reattiva. L'apertura delle app, il multitasking e i giochi più impegnativi vengono gestiti senza intoppi. Il software è l'ormai collaudata One UI di Samsung basata su Android, ricca di funzionalità e personalizzazioni.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    Il comparto fotografico, pur non raggiungendo i livelli dei top di gamma assoluti, si comporta egregiamente. La fotocamera principale cattura immagini nitide e ben esposte in diverse condizioni di luce. Sono presenti anche obiettivi ultra-grandangolari e teleobiettivi (verificare la configurazione specifica del modello FE) che aumentano la versatilità. Le foto in condizioni di scarsa illuminazione sono decenti, grazie anche alle ottimizzazioni software.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    La batteria da **4500 mAh** garantisce un'autonomia solida. Con un utilizzo medio-intenso, si arriva tranquillamente a fine giornata. La ricarica rapida da **25W** permette di tornare operativi in tempi brevi.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S24 FE è un'ottima scelta per chi desidera un assaggio dell'esperienza Galaxy S senza spendere una fortuna. Offre un pacchetto completo con un ottimo display, buone prestazioni e un comparto fotografico versatile. È un dispositivo equilibrato che consigliamo a chi cerca un nuovo smartphone Android di fascia alta con un occhio al portafoglio.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="s25-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Samsung Galaxy S25: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://images.samsung.com/it/smartphones/galaxy-s25/buy/04_Color-Selection/04-3_P2_Basic-Color/Color-Selection_Navy_PC.png" alt="Samsung Galaxy S25" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/0000FF/FFFFFF?text=Immagine+S25+Dettaglio';">
+
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S25 si conferma come il punto di riferimento nel mondo Android, portando con sé una serie di miglioramenti che consolidano la sua posizione di top di gamma. Dal design raffinato alle prestazioni mozzafiato, passando per un comparto fotografico ulteriormente evoluto, l'S25 è un concentrato di tecnologia.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    Il design dell'S25 mantiene l'eleganza distintiva della serie Galaxy S, con finiture premium e una sensazione solida in mano. Il display, un **Dynamic AMOLED 2X di nuova generazione**, offre una luminosità ancora maggiore e una fedeltà cromatica eccezionale. La fluidità è garantita dalla frequenza di aggiornamento adattiva che si spinge fino a **120Hz**. Le cornici sono ridotte al minimo per un'esperienza visiva totalmente immersiva.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Al cuore del Galaxy S25 batte il **processore di punta del 2025** affiancato da una generosa quantità di RAM. Le prestazioni sono semplicemente eccezionali in ogni scenario, dal gaming più spinto al multitasking intensivo. Il software, basato sull'ultima versione di Android con One UI, è fluido, intuitivo e ricco di funzionalità intelligenti, inclusi miglioramenti nell'ambito dell'intelligenza artificiale.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    Il comparto fotografico è dove l'S25 brilla particolarmente. Il sistema multi-obiettivo, con un **sensore principale ad alta risoluzione**, un ultra-grandangolare migliorato e un teleobiettivo con zoom ottico avanzato, cattura immagini e video di qualità professionale in qualsiasi condizione di luce. Nuove funzionalità software basate sull'IA rendono gli scatti ancora più dettagliati e i video più stabili.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    La batteria offre un'autonomia che copre agilmente una giornata intera, anche con un utilizzo intenso. La ricarica rapida è ancora più veloce, con supporto per **ricarica rapida migliorata** via cavo e miglioramenti nella ricarica wireless.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S25 è uno smartphone senza compromessi, ideale per chi cerca il meglio in termini di tecnologia, prestazioni e fotografia. Il prezzo è elevato, ma giustificato dall'innovazione e dalla qualità costruttiva. Se desideri il top di gamma Android, l'S25 è la scelta quasi obbligata.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="s25ultra-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Samsung Galaxy S25 Ultra: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_149593210?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402" alt="Samsung Galaxy S25 Ultra" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/000000/FFFFFF?text=Immagine+S25+Ultra+Dettaglio';">
+
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S25 Ultra rappresenta l'apice dell'innovazione mobile, offrendo un'esperienza senza precedenti per gli utenti più esigenti. Questo dispositivo combina un hardware potentissimo con funzionalità software avanzate, stabilendo un nuovo standard per gli smartphone di fascia alta.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    Il design dell'S25 Ultra è imponente ed elegante, con materiali di altissima qualità e una costruzione robusta. Il display **Dynamic AMOLED 2X di ampie dimensioni** è semplicemente spettacolare, con una risoluzione elevatissima, colori incredibilmente accurati e una luminosità massima che lo rende utilizzabile in qualsiasi condizione di luce, anche sotto il sole cocente. La frequenza di aggiornamento adattiva a **120Hz** garantisce una fluidità estrema.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Dotato del **processore mobile più avanzato disponibile**, l'S25 Ultra offre prestazioni ineguagliabili. Gestisce senza sforzo qualsiasi attività, dai giochi più complessi all'editing video in mobilità. La grande quantità di RAM assicura un multitasking fluidissimo. Il software, basato sull'ultima versione di Android e One UI, è ottimizzato per sfruttare al massimo l'hardware, con funzionalità esclusive e un'esperienza utente raffinata.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    Il comparto fotografico dell'S25 Ultra è il suo fiore all'occhiello. Il sistema multi-obiettivo include un **sensore principale da altissima risoluzione**, un ultra-grandangolare e **teleobiettivi con zoom ottico avanzato**, oltre a un avanzato zoom digitale Space Zoom. La qualità delle immagini e dei video è eccezionale in ogni situazione, con dettagli incredibili e colori realistici. Le funzionalità AI per la fotografia e la videografia portano l'esperienza a un livello superiore.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    La batteria garantisce un'autonomia eccellente, anche considerando le potenti prestazioni e il display luminoso. La ricarica rapida **molto veloce** e la ricarica wireless veloce permettono di ricaricare il dispositivo in tempi brevissimi.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">S-Pen</h3>
+                <p class="text-gray-700 mb-4">
+                    La S-Pen integrata è un elemento distintivo dell'Ultra, offrendo funzionalità aggiuntive per la produttività, la creatività e il controllo remoto. La sua latenza ridotta e le nuove gesture la rendono uno strumento ancora più versatile.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    Il Samsung Galaxy S25 Ultra è lo smartphone definitivo per chi cerca il massimo senza compromessi. Offre prestazioni ineguagliabili, un display superbo, un comparto fotografico rivoluzionario e la versatilità della S-Pen. Il prezzo è elevato, ma si giustifica con l'esperienza premium e le tecnologie all'avanguardia che questo dispositivo racchiude.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="iphone16-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">iPhone 16: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://m.media-amazon.com/images/I/712Pyq1hPfL.jpg" alt="iPhone 16" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/CCCCCC/333333?text=Immagine+iPhone+16+Dettaglio';">
+
+                <p class="text-gray-700 mb-4">
+                    L'iPhone 16 prosegue il percorso di affinamento intrapreso da Apple, concentrandosi su miglioramenti chiave per offrire un'esperienza utente ancora più fluida e potente. Pur mantenendo un design familiare, le novità sotto la scocca e nel software lo rendono un aggiornamento degno di nota per gli appassionati dell'ecosistema Apple.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    Il design dell'iPhone 16 è immediatamente riconoscibile, con la sua estetica minimalista e i materiali premium. Il display **Super Retina XDR** è luminoso e offre colori accurati, con un'ottima leggibilità in diverse condizioni di luce. La fluidità è assicurata dal refresh rate a **60Hz o 120Hz (a seconda del modello specifico)**. Le cornici sono sottili, massimizzando l'area di visualizzazione.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Alimentato dal nuovo chip **Apple A Bionic di ultima generazione**, l'iPhone 16 offre prestazioni eccezionali. Ogni operazione, dall'apertura delle app più pesanti al gaming, è istantanea e fluida. L'integrazione hardware-software è come sempre un punto di forza, con iOS che offre un'esperienza utente intuitiva, sicura e ricca di funzionalità, con particolare attenzione alla privacy e all'ecosistema Apple.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    Il sistema di fotocamere dell'iPhone 16, pur mantenendo un'interfaccia semplice, offre risultati eccellenti. Il **sensore principale ad alta risoluzione** cattura foto e video di alta qualità con dettagli nitidi e colori naturali. I miglioramenti nel software di elaborazione delle immagini, supportati dal chip Bionic, ottimizzano gli scatti in diverse condizioni, inclusa la modalità notturna.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    L'autonomia della batteria dell'iPhone 16 è **ottima per coprire una giornata intera**. Supporta la ricarica rapida e la ricarica wireless MagSafe.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    L'iPhone 16 è un solido aggiornamento che consolida i punti di forza della piattaforma Apple. Offre prestazioni di prim'ordine, un'ottima fotocamera e un'esperienza utente impeccabile grazie all'integrazione hardware-software. È la scelta ideale per chi è già nell'ecosistema Apple o cerca uno smartphone affidabile e performante con un'attenzione particolare alla semplicità d'uso e alla sicurezza.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+         <section id="iphone16pro-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">iPhone 16 Pro: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://www.juice.it/media/catalog/product/cache/7b46027f9500ccaf74b03362113ee58a/i/p/iphone16profotosito2025.jpg" alt="iPhone 16 Pro" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/000000/FFFFFF?text=Immagine+iPhone+16+Pro+Dettaglio';">
+
+                <p class="text-gray-700 mb-4">
+                    L'iPhone 16 Pro rappresenta il vertice dell'offerta Apple per il 2025, combinando un design raffinato con le massime prestazioni e un sistema fotografico all'avanguardia. È lo smartphone ideale per chi cerca il meglio in termini di tecnologia e innovazione nell'ecosistema iOS.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    Il design dell'iPhone 16 Pro mantiene l'eleganza distintiva dei modelli Pro, con un telaio in **materiali premium come il titanio** e finiture premium. Il display **Super Retina XDR ProMotion** offre una fluidità eccezionale grazie alla frequenza di aggiornamento adattiva fino a **120Hz**. La luminosità è elevatissima e la fedeltà cromatica è perfetta per professionisti e appassionati di multimedia. Le cornici sono ulteriormente ottimizzate per un'esperienza visiva ancora più coinvolgente.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Alimentato dal potentissimo chip **Apple A Pro Bionic di ultima generazione**, l'iPhone 16 Pro offre prestazioni senza rivali. Gestisce con estrema facilità qualsiasi carico di lavoro, dal gaming ai massimi dettagli all'editing video professionale. iOS è ottimizzato per sfruttare al meglio l'hardware Pro, offrendo un'esperienza utente reattiva, sicura e con accesso a un vasto ecosistema di app e servizi.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    Il sistema di fotocamere Pro è il punto di forza dell'iPhone 16 Pro. Include un **sensore principale migliorato da alta risoluzione**, un ultra-grandangolare con autofocus e un teleobiettivo con **zoom ottico avanzato**, oltre a un avanzato zoom digitale. Le foto e i video sono di qualità professionale in ogni condizione, con prestazioni eccezionali in condizioni di scarsa illuminazione e nuove funzionalità per la fotografia computazionale e i video ProRes.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    L'autonomia della batteria dell'iPhone 16 Pro è **eccellente per un dispositivo Pro**. Supporta la ricarica rapida e la ricarica wireless MagSafe, con possibili miglioramenti nella velocità.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    L'iPhone 16 Pro è lo smartphone definitivo per chi desidera il meglio che Apple ha da offrire. Combina prestazioni estreme, un display superbo, un sistema fotografico versatile e avanzato, e l'esperienza utente fluida e sicura di iOS. È un investimento importante, ma giustificato dalle capacità e dalla longevità del dispositivo.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+         <section id="iphonese4-full-review-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">iPhone SE 4: Recensione Approfondita</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="https://hd2.tudocdn.net/1176560?w=824&h=494" alt="iPhone SE 4" class="w-full h-64 object-cover mb-6 rounded-lg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/EEEEEE/333333?text=Immagine+iPhone+SE+4+Dettaglio';">
+
+                <p class="text-gray-700 mb-4">
+                    L'iPhone SE di quarta generazione segna un importante passo avanti per la linea più accessibile di Apple, portando un design più moderno e prestazioni significativamente migliorate a un prezzo competitivo. È la scelta ideale per chi desidera l'esperienza iOS senza spendere cifre da top di gamma.
+                </p>
+                <h3 class="text-xl font-bold mb-2 mt-4">Design e Display</h3>
+                <p class="text-gray-700 mb-4">
+                    L'iPhone SE 4 abbandona il design classico con tasto Home a favore di un look più simile agli iPhone recenti, con un display a tutto schermo e Face ID. Il display **Retina HD** offre colori vivaci e una buona luminosità per l'utilizzo quotidiano. Le dimensioni compatte lo rendono comodo da usare con una mano.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Prestazioni e Software</h3>
+                <p class="text-gray-700 mb-4">
+                    Dotato di un chip **Apple A Bionic potente e recente**, l'iPhone SE 4 offre prestazioni eccellenti per la sua fascia di prezzo. Gestisce senza problemi le app di tutti i giorni, i giochi e il multitasking. L'esperienza software con iOS è fluida e intuitiva, garantendo aggiornamenti per molti anni.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Fotocamera</h3>
+                <p class="text-gray-700 mb-4">
+                    La fotocamera singola posteriore, con un **sensore migliorato**, beneficia dei miglioramenti nel processore d'immagine e nel software di Apple. Scatta foto di buona qualità in diverse condizioni, con modalità Ritratto migliorata e prestazioni decenti in condizioni di scarsa illuminazione. È una fotocamera affidabile per l'uso quotidiano.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Batteria</h3>
+                <p class="text-gray-700 mb-4">
+                    L'autonomia della batteria dell'iPhone SE 4 è **sufficiente per coprire una giornata intera**. Supporta la ricarica rapida e la ricarica wireless.
+                </p>
+                 <h3 class="text-xl font-bold mb-2 mt-4">Conclusione</h3>
+                <p class="text-gray-700 mb-4">
+                    L'iPhone SE 4 è un'opzione estremamente interessante per chi cerca un iPhone potente e moderno a un prezzo più accessibile. Offre un ottimo equilibrio tra prestazioni, fotocamera e design, rendendolo una scelta valida per molti utenti che vogliono entrare nell'ecosistema Apple o aggiornare un vecchio iPhone.
+                </p>
+                <div class="mt-6 text-center">
+                     <a href="#recensioni" class="text-blue-600 hover:underline font-semibold" data-section="recensioni">&larr; Torna a Tutte le Recensioni</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="chisiamo-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Chi Siamo</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700 leading-relaxed">
+                    Benvenuto su Tech Rech! Siamo un team di appassionati di tecnologia dedicati a fornire recensioni oneste e approfondite sui prodotti più recenti e interessanti sul mercato. Il nostro obiettivo è aiutarti a prendere decisioni informate sui tuoi acquisti tecnologici. Esplora le nostre recensioni e scopri il mondo della tecnologia con noi!
+                </p>
+                </div>
+        </section>
+
+        <section id="contatti-section" class="main-section hidden-section">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Contattaci</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
+                <p class="text-gray-700 mb-4">Hai domande, suggerimenti o vuoi proporre un prodotto da recensire? Compila il modulo qui sotto o contattaci via email.</p>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nome:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Messaggio:</label>
+                        <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-shadow-outline" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                            Invia Messaggio
+                        </button>
+                    </div>
+                </form>
+                <p class="text-center text-gray-600 text-sm mt-4">O scrivici a: <a href="mailto:info@techrech.com" class="text-blue-600 hover:underline">info@techrech.com</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Tech Rech. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show a section and hide others
+        function showSection(sectionId) {
+            // Hide all main sections
+            document.querySelectorAll('.main-section').forEach(section => {
+                section.classList.add('hidden-section');
+            });
+            // Show the desired section
+            document.getElementById(sectionId).classList.remove('hidden-section');
+        }
+
+        // Event handler for clicks on navigation links and "Read full review" links
+        document.querySelectorAll('nav a, .main-section a[data-section]').forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Prevent default link behavior (page reload)
+                event.preventDefault();
+                // Get the section ID from the data-attribute
+                const section = this.getAttribute('data-section');
+                if (section) {
+                    // Show the corresponding section
+                    showSection(section + '-section');
+                    // Update URL with hash for browser navigation
+                    history.pushState(null, '', this.href);
+                }
+            });
+        });
+
+        // Show the initial section (Home) on page load
+        // Check URL hash to show the correct section if the page is loaded with a hash
+        window.addEventListener('load', () => {
+            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showSection(initialSection + '-section');
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', () => {
+            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showSection(initialSection + '-section');
+        });
+
+    </script>
+
+</body>
+</html>
